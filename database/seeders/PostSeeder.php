@@ -17,7 +17,7 @@ class PostSeeder extends Seeder
     public function run(Generator $faker): void
     {
         Storage::makeDirectory('post_images');
-        for ($i = 1; $i <= 5; $i++) {
+        for ($i = 1; $i <= 10; $i++) {
             $post = new Post();
             $post->title = $faker->text(20);
             $post->content = $faker->paragraphs(15, true);
